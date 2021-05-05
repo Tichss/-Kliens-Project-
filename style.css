@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin:0;
+    background-image: url('bg.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    /* background: rgb(39, 39, 39); */
+    color: blanchedalmond;
+    height: 100vh;
+}  
+
+
+.wrapper{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    /* background-color: darkgreen; */
+}
+
+
+.card{
+
+    height : 300px;
+    width: 200px;
+    min-width: 200px;
+    margin: -65px; /*itt csúszikee*/
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    position: relative; 
+}
+
+/*Középső Nagy Kép*/
+.card img:nth-child(2){ 
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+}
+
+/*felso kicsi Kép*/
+.card img:nth-child(3){
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    
+}
+
+/*also kicsi Kép*/
+.card img:nth-child(4){
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
+    transform: rotate(180deg);
+}
+
+.card p:nth-child(1){
+    font-family: Helvetica, sans-serif;
+    font-size: 35px;
+    position: absolute;
+    color:black;
+    margin: 0;
+    top: 10px;
+    left: 13px;
+}
+
+.card p:nth-child(5){
+    font-family: Helvetica, sans-serif;
+    font-size: 35px;
+    position: absolute;
+    color:black;
+    margin: 0;
+    bottom: 10px;
+    right: 13px;
+    transform: rotate(180deg);
+}
+
+#playerPlace{
+    /* background: indigo; */
+    width: 85%;
+    height: 450px;
+    position: absolute;
+    bottom: 0;
+    left: 50%; /*ez kell h faszán középen legyen*/
+    transform: translate(-50%, 0); /*meg ez is*/
+
+}
+
+#playerCount{
+    background-color: rgba(88, 88, 88, 0.5);
+    position: absolute;
+    bottom: 15px;
+    left: 75%;
+    transform: translate(-50%, 0);
+    width: 25%;
+    height: 90px;
+    font-family: Helvetica, sans-serif;
+    font-size: 25px;
+    line-height: 10%;
+    color: white;
+    text-align: center;
+    z-index: 100;
+
+}
+.control{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    margin: 30px;
+    padding: 30px 70px;
+    border-radius: 25px;
+    font-family: Helvetica, sans-serif;
+    font-size: 25px;
+    color: black;
+}
+
+#cardPlace{
+    /* background-color: brown; */
+    width: 60%;
+    height: 330px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#pakliPlace{
+    height: 200px;
+    width: 300px;
+    /* background-color: chartreuse; */
+    position: absolute;
+    right: -120px;
+    top: 0;
+}
+
+#osztoPlace{
+    /* background-color: rgb(0, 255, 255); */
+    width: 80%;
+    height: 330px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ablak{
+    height: 300px;
+    width: 60%;
+    background-color: white;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center;
+    visibility: hidden;
+}
+
+#ablak h1{
+    margin: 0;
+    margin-top: 30px;
+    color: black;
+    font-size: 60px;
+}
+
+#ablak p{
+    color: black;
+    font-size: 25px;
+    margin: 10px;
+}
+
+#ablak button{
+    margin : 20px;
+    font-size: 25px;
+}
